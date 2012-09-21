@@ -15,10 +15,10 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: aztutar_development
+  database: aztutar
   pool: 5
-  username: aztutar
-  password:
+  username: postgres
+  password: postgres
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -41,15 +41,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: aztutar_test
+  database: aztutar
   pool: 5
-  username: aztutar
-  password:
+  username: postgres
+  password: postgres
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: aztutar_production
+  database: aztutar
   pool: 5
-  username: aztutar
-  password:
+  username: postgres
+  password: postgres

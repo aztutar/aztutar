@@ -1,13 +1,32 @@
+@font-face {
+  font-family: Lucida Grande;
+  src: url("fonts/Lucida Grande.ttf");
+}
+
+@font-face {
+  font-family: Lucida Grande Bold;
+  src: url("fonts/Lucida Grande Bold.ttf");
+}
+
+@font-face {
+  font-family: Ubuntu Condensed;
+  src: url("fonts/Ubuntu-R.ttf");
+}
+
 body {
-  background-color: #fff;
+  text-align: center;
+  background-color: #999999;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  //font-family: verdana, arial, helvetica, sans-serif;
+  //lucida grande',tahoma,verdana,arial,sans-serif
+  font-family: Ubuntu Condensed;
   font-size: 13px;
   line-height: 18px;
+
+
 }
 
 p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -66,62 +85,105 @@ div {
     font-size: 12px;
     list-style: square;
   }
+}
+
+///////////////////////////////////////////////////////////////
 
 
-  ///////////////////////////////////////////////////////////////
-
+#header {
   #containers {
-      margin: 0 auto;
-      padding: 0;
-      width:1000px;
+    text-align: left;
+    margin: 0 auto;
+    //margin: 5px;
+    width:1000px;
   }
-  #header {
+
+  #left {
+    width: 600px;
+    float: left;
+    height: 150px;
+    background-image: url("rails.png");
+    background-size: 150px 100px;
+
+  }
+
+  #right {
+    text-indent: 40px;
+    width: 400px;
+    float: right;
+    height: 150px;
+    background-color: #f08080;
+
+  }
 
   width: 100%;
-  height: 100%;
+  min-width: 1000px;
+  height: 150px;
   background-color:#ffa940;
 
-  }
+}
 
-  #logo_left{
-
-  width: 20%;
-  //background: url("/images/logo.png");
-  //background-size:100% 100%;
-  //background-repeat: no-repeat;
-  height:150px;
-  //position:absolute;
-  //left:200px;
-  //opacity: 0.9;
-  //top:0px;
-  //padding-left:20px;
-  float:left;
-  //margin-top:-152px;
-  //margin-left:80px;
-  }
-
-  #logo_right{
-
-  width:70%;
-  height:150px;
-  //background: url("/images/aaa.jpeg");
-  //background-size:100% 100%;
-  //background-color:rgba(255,0,0,0.5);
-  //text-opacity:0.9;
-  //filter:alpha(opacity=60);
-  //position:absolute;
-  //right:200px;
-  //top:0px;
-  //text-align:right;
-  //border-radius:20px;
-  //padding-right:20px;
-  float:right;
-  //margin-top:-152px;
-  //margin-right:20px;
-  //color:#000;
-  //font-size:13px;
-  //font-family: aller_bold;
-  //padding-top:10px;
+#main {
+  #containers {
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+    width:1000px;
+    background-color: white;
+    //overflow: auto;
 
   }
+
+  #search {
+    width: 1000px;
+    height: 50px;
+    //margin: 20px;
+
+  }
+
+  #left {
+    width: 200px;
+    min-height: 750px;
+    float: left;
+    background-color: #9932cc ;
+  }
+
+  #right {
+    width: 800px;
+    min-height: 750px;
+    float: right;
+    background-color: #7cfc00;
+  }
+
+  width: 100%;
+  min-height: 800px;
+  min-width: 1000px;
+  background-color: #00008b;
+}
+
+#footer {
+  #containers {
+    margin: 0 auto;
+    padding: 0;
+    width:1000px;
+    height: 50px;
+    background-color: red;
+
+  }
+
+  #left {
+
+
+  }
+
+  #right {
+
+
+  }
+  width: 100%;
+  height: 50px;
+  min-width: 1000px;
+  background-color: purple;
+  //background-color:#ffa940;
+
 }

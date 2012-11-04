@@ -1,21 +1,34 @@
-<h1>Listing welcomes</h1>
+<div id="containers">
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+  <div id="search">
+    Arama
 
-<% @welcomes.each do |welcome| %>
-  <tr>
-    <td><%= link_to 'Show', welcome %></td>
-    <td><%= link_to 'Edit', edit_welcome_path(welcome) %></td>
-    <td><%= link_to 'Destroy', welcome, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
+  </div>
+</div>
 
-<br />
+<div id="containers">
+  <div id="left">Filtre</div>
+  <div id="right">
+    <h3>Ürünler</h3>
 
-<%= link_to 'New Welcome', new_welcome_path %>
+    <table>
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+
+      <% @welcomes.each do |welcome| %>
+          <tr>
+            <td><%= link_to 'Show', welcome %></td>
+            <td><%= link_to 'Edit', edit_welcome_path(welcome) %></td>
+            <td><%= link_to 'Destroy', welcome, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+      <% end %>
+    </table>
+
+    <br />
+
+    <%= link_to 'New Welcome', new_welcome_path %>
+  </div>
+</div>

@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Aztutar</title>
+  <title>AzTutar - Türkiye'nin ilk kampanya sitesi</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
 <div id="header">
-  <div id="containers" style="text-align: center;">
-
-    <a href="/welcomes">
-
-      <div id="logo_left">
-        asd
-      </div></a>
-
-
-
-    <div id="logo_right">
-      asddd
+  <div id="containers">
+    <a href="/">
+      <div id="left"></div></a>
+    <div id="right">
+      login
     </div>
-
-    <%= yield %>
-
   </div>
 </div>
-
+<div id="main">
+  <%= yield %>
+</div>
+<div id="footer">
+  <div id="containers">
+    <a href="/welcomes">
+      <div id="left">
+        asd
+      </div>
+    </a>
+    <div id="right">
+      asddd
+    </div>
+  </div>
+</div>
 </body>
 </html>

@@ -58,5 +58,8 @@ module Aztutar
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    #Aztutar::Application.
+    config.secret_token = '5a88b2a5b04bf5702385cc07ff6224f4b5dbf1b3cfdd87bb2f39a9e3f062c8d7fb54d4be70b4d6c9e22ae3c917d097b8e392692377ef111345ad8e6e61efd4ff'
   end
 end

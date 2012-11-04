@@ -9,15 +9,28 @@
 <body>
 <div id="header">
   <div id="containers">
-    <a href="/">
+    <a href="/products">
       <div id="left"></div></a>
     <div id="right">
-      login
+
+      <div id="user_nav">
+
+        <% if user_signed_in? %>
+            Signed in as <%= current_user.email %>
+            <%= link_to "Sign out", destroy_user_session_path %>
+        <% else %>
+            <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "Sign in", new_user_session_path %>.
+        <% end %>
+
+      </div>
     </div>
   </div>
 </div>
 <div id="main">
+
+  <div id="containers">
   <%= yield %>
+    </div>
 </div>
 <div id="footer">
   <div id="containers">

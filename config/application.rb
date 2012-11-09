@@ -2,6 +2,8 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
+
+
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
   Bundler.require(*Rails.groups(:assets => %w(development test)))
@@ -11,6 +13,9 @@ end
 
 module Aztutar
   class Application < Rails::Application
+
+
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -31,7 +36,7 @@ module Aztutar
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    # config.i18n.default_locale = :de
+    config.i18n.default_locale = :tr
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
@@ -61,5 +66,7 @@ module Aztutar
 
     #Aztutar::Application.
     config.secret_token = '5a88b2a5b04bf5702385cc07ff6224f4b5dbf1b3cfdd87bb2f39a9e3f062c8d7fb54d4be70b4d6c9e22ae3c917d097b8e392692377ef111345ad8e6e61efd4ff'
+
+
   end
 end

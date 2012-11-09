@@ -1,6 +1,6 @@
 # Additional translations at https://github.com/plataformatec/devise/wiki/I18n
 
-en:
+tr:
   errors:
     messages:
       expired: "has expired, please request a new one"
@@ -57,4 +57,4 @@ en:
       unlock_instructions:
         subject: 'Unlock Instructions'
 
-    password_reminder: 'Forgot your password?'
+    password_reminder: 'Şifremi unuttum'

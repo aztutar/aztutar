@@ -1,0 +1,15 @@
+
+
+
+tr:
+  welcome:
+    username: "Kullanıcı Adı:"
+    password: "Şifre:"
+    remember_me: "Beni Hatırla"
+    title: "Üye Giriş Sayfası"
+    sign_in: "Giriş"
+    sign_up: "Üye Ol"
+
+  devise:
+    sign_in: "Giriş"
+    sign_up: "Üye Ol"
